@@ -1,12 +1,14 @@
-# GoStack
+<h1 align="center">GoStack 👩‍💻</h1> 
 
 <p align="center">
 <img alt="License" src="https://www.gustavoferri.com.br/wp-content/uploads/2019/05/5_ferramentas_em_alta_para_desenvolvedores_React.png"/>
 </p>
 
-## Bootcamp da Rocketseat 🚀
 
-<br>
+<h1 align="center">Bootcamp da Rocketseat 🚀</h1> 
+
+
+
 
 ## Tecnologias Utilizadas
 
