@@ -3,18 +3,24 @@
 <img alt="License" src="https://raw.githubusercontent.com/RayzaOliveira/bootcamp/master/assets/68747470733a2f2f726f636b6574736561742d63646e2e73332d73612d656173742d312e616d617a6f6e6177732e636f6d2f626f6f7463616d702d6865616465722e706e67.png"/>
 </p>
 
-<!-- <p align="center">
-<img alt="License" src="https://raw.githubusercontent.com/RayzaOliveira/bootcamp/master/assets/1_34-5tbanwB0yo0ccyP_7oA.jpeg"/>
-</p> -->
+<p align="center">
+  <a href="https://www.linkedin.com/in/rayza-oliveira-costa-482658129/">
+    <img alt="Made by Rayza" src="https://img.shields.io/badge/made%20by-Rayza%20Oliveira-pink">
+  </a>
+  <img alt="License" src="https://img.shields.io/badge/licence-MIT-pink">
+  <a href="https://github.com/RayzaOliveira/bootcamp/readme-portugues.md">
+    <img alt="Readme em Português" src="https://img.shields.io/badge/Readme-Português-brigthgreen">
+  </a>
+</p>
 
 <p>
-O <b>GoStack</b> é um bootcamp oferecido pela empresa <b>Rockeseat</b>, direcionando à pessoas que desejam aprofundar seus estudos na aréa do desenvolvimento de software.
+The <b> GoStack </b> is a bootcamp offered by the company <a href= "https://app.rocketseat.com.br/me/rayzaoliveira"> Rockeseat </a>, targeting people who want to deepen their studies in the field of software development.
 </p>
 <br>
 
-<h1 align="center">Tecnologias Utilizadas🚩</h1> 
+<h1 align="center">Technologies Used🚩</h1> 
 
-O projeto está sendo desenvolvido com as seguintes tecnologias:
+The project is being developed with the following technologies:
 
 - [JavaScript]
 - [NodeJs]
@@ -30,5 +36,5 @@ O projeto está sendo desenvolvido com as seguintes tecnologias:
 ---
 
 <h4 align="center">
-    Feito com 💚 by <a href="https://www.linkedin.com/in/rayza-oliveira-costa-482658129/" target="_blank">Rayza Oliveira</a>
+    Made with 💚 by <a href="https://linktr.ee/oliveirarayza">Rayza Oliveira</a>
 </h4>
