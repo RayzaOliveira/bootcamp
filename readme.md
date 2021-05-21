@@ -8,7 +8,7 @@
     <img alt="Made by Rayza" src="https://img.shields.io/badge/made%20by-Rayza%20Oliveira-pink">
   </a>
   <img alt="License" src="https://img.shields.io/badge/licence-MIT-pink">
-  <a href="https://github.com/RayzaOliveira/bootcamp/readme-portugues.md">
+  <a href="https://github.com/RayzaOliveira/bootcamp/blob/master/readme-portugues.md">
     <img alt="Readme em Português" src="https://img.shields.io/badge/Readme-Português-brigthgreen">
   </a>
 </p>
