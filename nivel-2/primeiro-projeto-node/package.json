@@ -10,6 +10,8 @@
   "dependencies": {
     "date-fns": "^2.21.3",
     "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "typeorm": "^0.2.34",
     "uuid": "^8.3.2",
     "uuidv4": "^6.2.8"
   },

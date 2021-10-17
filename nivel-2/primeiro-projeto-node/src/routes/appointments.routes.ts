@@ -1,41 +1,43 @@
 import { response, Router } from 'express';
-import { startOfHour, parseISO } from 'date-fns';
+import { parseISO } from 'date-fns';
 
 import AppointmentsRepository from '../repositories/AppointmentsRepository';
+import CreateAppointmentService from '../services/CreateAppointmentService';
 
-// Passa a informacao de um arquivo para outro: DTO (Data Transfer Object)
+// Passa a informação de um arquivo para outro: DTO (Data Transfer Object)
 
 const appointmentsRouter = Router();
 const appointmentsRepository = new AppointmentsRepository();
 
-// Soc: Separator os Concerns (Separação de preoccupações)
+// Soc: Separator os Concerns (Separação de preocupações)
+// Rota: Receber a requisição, chamar outro arquivo, devolver uma resposta
 
-appointmentsRouter.get('/', (resquest, response) => {
-  const appoiments = appointmentsRepository.all();
+appointmentsRouter.get('/', (request, response) => {
+  const appointments = appointmentsRepository.all();
 
-  return response.json(appoiments);
+  return response.json(appointments);
 });
 
 // POST http://localhost:3333/appintments
 appointmentsRouter.post('/', (request, response) => {
-  const { provider, date } = request.body;
+  try {
+    const { provider, date } = request.body;
 
-  const parsedDate = startOfHour(parseISO(date));
+    const parsedDate = parseISO(date);
 
-  const findAppoimentInSameDate = appointmentsRepository.findByDate(parsedDate);
+    const CreateAppointment = new CreateAppointmentService(
+      appointmentsRepository,
+    );
 
-  if (findAppoimentInSameDate) {
-    return response
-      .status(400)
-      .json({ message: 'This appointment is already booked' });
+    const appointment = CreateAppointment.execute({
+      date: parsedDate,
+      provider: provider,
+    });
+
+    return response.json(appointment);
+  } catch (err) {
+    return response.status(400).json({ error: err.message });
   }
-
-  const appointment = appointmentsRepository.create({
-    provider,
-    date: parsedDate,
-  });
-
-  return response.json(appointment);
 });
 
 export default appointmentsRouter;
